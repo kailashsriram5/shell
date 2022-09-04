@@ -1,4 +1,8 @@
 # shell.csen1011.com
 
 Shell interaface to find all the needed help.
-Let's see.
+
+
+## Credit
+
+Based on Vincent's awesome [LiveTerm](https://github.com/Cveinnt/LiveTerm).
