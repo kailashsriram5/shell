@@ -8,7 +8,7 @@ export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
   var c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    if (i % 7 === 0) {
+    if (i % 5 === 0) {
       c += Object.keys(bin).sort()[i - 1] + '\n';
     } else {
       c += Object.keys(bin).sort()[i - 1] + ' ';
@@ -31,25 +31,15 @@ export const repo = async (args: string[]): Promise<string> => {
 // About
 export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
-Welcome to my website!
+Welcome to the course website!
 More about me:
 'sumfetch' - short summary.
-'resume' - my latest resume.
 'readme' - my github readme.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
   window.open(`${config.resume_url}`);
   return 'Opening resume...';
-};
-
-// Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
 };
 
 // Contact
@@ -81,15 +71,10 @@ export const duckduckgo = async (args: string[]): Promise<string> => {
   return `Searching duckduckgo for ${args.join(' ')}...`;
 };
 
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
-
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-  return `Searching reddit for ${args.join(' ')}...`;
-};
+// export const stackoverflow = async (args: string[]): Promise<string> => {
+//   window.open(`https://stackoverflow.com/?q=${args.join(' ')}`);
+//   return `Searching stackoverflow for ${args.join(' ')}...`;
+// };
 
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
@@ -108,50 +93,60 @@ fake
 directories`;
 };
 
-export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
-};
-
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
-};
-
-export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
-};
-
-export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
-};
-
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
-};
-
-export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
+// make it open the details of the command help page
+// from the KB.
+// TODO: create commands for pwd, cd, mkdir, rmdir, mv, cp, rm
+// clang, gcc, compile
+export const cd = async (args: string[]): Promise<string> => {
+  return `cd command is useful for change directory`;
 };
 
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+
+   ██████╗███████╗███████╗███╗   ██╗ ██╗ ██████╗  ██╗ ██╗
+  ██╔════╝██╔════╝██╔════╝████╗  ██║███║██╔═████╗███║███║
+  ██║     ███████╗█████╗  ██╔██╗ ██║╚██║██║██╔██║╚██║╚██║
+  ██║     ╚════██║██╔══╝  ██║╚██╗██║ ██║████╔╝██║ ██║ ██║
+  ╚██████╗███████║███████╗██║ ╚████║ ██║╚██████╔╝ ██║ ██║
+   ╚═════╝╚══════╝╚══════╝╚═╝  ╚═══╝ ╚═╝ ╚═════╝  ╚═╝ ╚═╝
+                                                         
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
+};
+
+// CSEN1011 manual pages
+export const man = async (args: string[]): Promise<string> => {
+  window.open(`${config.manual_url}`);
+
+  return 'Opening CSEN1011 Manual Pages...';
+};
+
+// Karel Game
+export const one_karel_game = async (args: string[]): Promise<string> => {
+  window.open(`${config.karel_url}`);
+
+  return 'Opening Karel Game...';
+};
+
+// Karel Game
+export const two_karel_game_te = async (args: string[]): Promise<string> => {
+  window.open(`${config.karel_te_url}`);
+
+  return 'Opening Telugu Karel Game...';
+};
+
+// 2048 Game
+export const three_2048_game = async (args: string[]): Promise<string> => {
+  window.open(`${config.game_2048}`);
+
+  return 'Opening 2048 Game...';
 };

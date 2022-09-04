@@ -1,21 +1,20 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "https://raw.githubusercontent.com/csen1011/.github/main/profile/README.md",
+  "title": "CSEN1011: Problem Solving and Programming in C",
+  "name": "CSEN1011 @ GITAM School of Technology",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "csen1011",
+    "linkedin": "gitamdeemeduniversity"
   },
+  "manual_url": "https://manual.csen1011.com",
+  "karel_url":"https://csen1011.com/keral-game",
+  "karel_te_url":"https://csen1011.com/keral-game-te",
+  "game_2048":"https://csen1011.com/2048-game",
   "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
+  "ps1_hostname": "csen1011.com",
+  "ps1_username": "vidyardhi",
+  "repo": "https://github.com/csen1011/shell",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
-  "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
-  },
   "colors": {
     "light": {
       "background": "#FBF1C9",
