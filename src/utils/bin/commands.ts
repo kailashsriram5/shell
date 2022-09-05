@@ -155,7 +155,7 @@ export const web = async (args: string[]): Promise<string> => {
 // games karel, 2048, snake, 15
 export const game = async (args: string[]): Promise<string> => {
   if (args.length != 1) {
-    return 'Invalid arguments!\n\nUsage:\ngame karel\ngame 2048\ngame snake\ngame 15\n'
+    return 'Invalid arguments!\n\nUsage:\ngame snake\ngame 2048\ngame karel\ngame 15\n'
   }
 
   // karel game select
