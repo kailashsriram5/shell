@@ -160,7 +160,7 @@ export const game = async (args: string[]): Promise<string> => {
 
   // karel game select
   if (args[0] == 'karel') {
-    window.open(`${config.karel_select_url}`);
+    window.open(`${config.karel_url}`);
     return 'Opening karel game...';
   }
   
