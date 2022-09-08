@@ -181,6 +181,28 @@ export const game = async (args: string[]): Promise<string> => {
     window.open(`${config.game_15_url}`);
     return 'Opening 15 game...';
   }
+  return 'Invalid arguments!\n\nUsage:\ngame snake\ngame 2048\ngame karel\ngame 15\n'
+};
 
-  return 'number of args: ' + String(args.length) + '\nCmd: game ' + args[0];
+// seniors_project ar
+// seniors_project hangman
+
+export const seniors_project = async (args: string[]): Promise<string> => {
+  if (args.length != 1) {
+    return 'Invalid arguments!\n\nUsage:\nseniors_project hangman\nseniors_project ar\n'
+  }
+
+  // ar project
+  if (args[0] == 'ar') {
+    window.open(`${config.ar_project_url}`);
+    return 'Opening AR Project done by ' + `${config.ar_project_senior_name}` + ' ...';
+  }
+  
+  // hangman project
+  if (args[0] == 'hangman') {
+    window.open(`${config.hangman_project_url}`);
+    return 'Opening Hangman Project done by ' + `${config.ar_project_senior_name}` + ' ...';
+  }
+    
+  return 'Invalid arguments!\n\nUsage:\nseniors_project hangman\nseniors_project ar\n'
 };
