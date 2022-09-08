@@ -8,7 +8,7 @@ export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
   var c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    if (i % 7 === 0) {
+    if (i % 5 === 0) {
       c += Object.keys(bin).sort()[i - 1] + '\n';
     } else {
       c += Object.keys(bin).sort()[i - 1] + ' ';
@@ -22,10 +22,10 @@ export const help = async (args: string[]): Promise<string> => {
 };
 
 // Redirection
-export const repo = async (args: string[]): Promise<string> => {
-  window.open(`${config.repo}`);
-  return 'Opening Github repository...';
-};
+// export const repo = async (args: string[]): Promise<string> => {
+//   window.open(`${config.repo}`);
+//   return 'Opening Github repository...';
+// };
 
 // About
 // export const about = async (args: string[]): Promise<string> => {
@@ -69,23 +69,23 @@ export const about = async (args: string[]): Promise<string> => {
 //   return `Opening mailto:${config.email}...`;
 // };
 
-export const github = async (args: string[]): Promise<string> => {
-  window.open(`https://github.com/${config.social.github}/`);
+// export const github = async (args: string[]): Promise<string> => {
+//   window.open(`https://github.com/${config.social.github}/`);
 
-  return 'Opening github...';
-};
+//   return 'Opening github...';
+// };
 
-export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
+// export const linkedin = async (args: string[]): Promise<string> => {
+//   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
 
-  return 'Opening linkedin...';
-};
+//   return 'Opening linkedin...';
+// };
 
 // Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
+// export const google = async (args: string[]): Promise<string> => {
+//   window.open(`https://google.com/search?q=${args.join(' ')}`);
+//   return `Searching google for ${args.join(' ')}...`;
+// };
 
 // export const duckduckgo = async (args: string[]): Promise<string> => {
 //   window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
@@ -93,9 +93,9 @@ export const google = async (args: string[]): Promise<string> => {
 // };
 
 // Typical linux commands
-export const echo = async (args: string[]): Promise<string> => {
-  return args.join(' ');
-};
+// export const echo = async (args: string[]): Promise<string> => {
+//   return args.join(' ');
+// };
 
 export const whoami = async (args: string[]): Promise<string> => {
   return `${config.ps1_username}`;
@@ -139,11 +139,12 @@ Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline"
 };
 
 // CSEN1011 manual pages
-export const man = async (args: string[]): Promise<string> => {
-  window.open(`${config.manual_url}`);
+// TODO: enable when we start using the manual
+// export const man = async (args: string[]): Promise<string> => {
+//   window.open(`${config.manual_url}`);
 
-  return 'Opening CSEN1011 Manual Pages...';
-};
+//   return 'Opening CSEN1011 Manual Pages...';
+// };
 
 // CSEN1011 web pages
 export const web = async (args: string[]): Promise<string> => {
