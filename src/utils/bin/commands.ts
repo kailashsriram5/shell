@@ -202,7 +202,7 @@ export const seniors_project = async (args: string[]): Promise<string> => {
   // hangman project
   if (args[0] == 'hangman') {
     window.open(`${config.hangman_project_url}`);
-    return 'Opening Hangman Project done by ' + `${config.ar_project_senior_name}` + ' ...';
+    return 'Opening Hangman Project done by ' + `${config.hangman_project_senior_name}` + ' ...';
   }
     
   return 'Invalid arguments!\n\nUsage:\nseniors_project hangman\nseniors_project ar\n'
