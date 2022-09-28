@@ -139,12 +139,26 @@ Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline"
 };
 
 // CSEN1011 manual pages
-// TODO: enable when we start using the manual
-// export const man = async (args: string[]): Promise<string> => {
-//   window.open(`${config.manual_url}`);
+export const man = async (args: string[]): Promise<string> => {
+  
+  if (args.length != 1) {
+    return 'Invalid arguments!\n\nUsage:\nman get_int\nman get_string\n'
+  }
 
-//   return 'Opening CSEN1011 Manual Pages...';
-// };
+  // which API
+  if (args[0] == 'get_int') {
+    window.open(`${config.manual_url}` + '/3/get_int');
+    return 'Opening get_int Manual Page...';
+  }
+  
+  if (args[0] == 'get_string') {
+    window.open(`${config.manual_url}` + '/3/get_string');
+    return 'Opening get_string Manual Page...';
+  }
+
+  return 'Invalid arguments!\n\nUsage:\nman get_int\nman get_string\n'
+
+};
 
 // CSEN1011 web pages
 export const web = async (args: string[]): Promise<string> => {
