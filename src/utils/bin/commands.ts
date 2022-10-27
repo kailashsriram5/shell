@@ -221,3 +221,23 @@ export const seniors_project = async (args: string[]): Promise<string> => {
     
   return 'Invalid arguments!\n\nUsage:\nseniors_project hangman\nseniors_project ar\n'
 };
+
+export const explore = async (args: string[]): Promise<string> => {
+  if (args.length != 1) {
+    return 'Invalid arguments!\n\nUsage:\nexplore for-loop-01\nexplore for-loop-02\n'
+  }
+
+  // for loop example 1
+  if (args[0] == 'for-loop-01') {
+    window.open(`${config.exlorable_for_loop_01_url}`);
+    return 'Explore how output changes when you change the initialization statement, condition statement, increment statment in a for loop.';
+  }
+  
+  // for loop example 2
+  if (args[0] == 'for-loop-02') {
+    window.open(`${config.exlorable_for_loop_02_url}`);
+    return 'Explore what happens when you change index variable in a for loop?';
+  }
+    
+  return 'Invalid arguments!\n\nUsage:\nexplore for-loop-01\nexplore for-loop-02\n'
+};
