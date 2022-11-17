@@ -46,7 +46,7 @@ export const about = async (args: string[]): Promise<string> => {
    ▓▓     ▓▓▓    ▐▓▓    ▐▓▓     ▓▓           ABOUT
 ▐▓▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▓        ${config.name}
 ▐▓                                 ▐▓       爵 <u><a href="${config.repo}" target="_blank">Github repo</a></u>
-▐▓        > C S E N 1 0 1 1        ▐▓       -----------
+▐▓            > C X R              ▐▓       -----------
 ▐▓                                 ▐▓        CONTACT 
 ▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
    ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
@@ -123,15 +123,23 @@ export const date = async (args: string[]): Promise<string> => {
 
 // Banner
 export const banner = (args?: string[]): string => {
-  return `
-
-   ██████╗███████╗███████╗███╗   ██╗ ██╗ ██████╗  ██╗ ██╗
-  ██╔════╝██╔════╝██╔════╝████╗  ██║███║██╔═████╗███║███║
-  ██║     ███████╗█████╗  ██╔██╗ ██║╚██║██║██╔██║╚██║╚██║
-  ██║     ╚════██║██╔══╝  ██║╚██╗██║ ██║████╔╝██║ ██║ ██║
-  ╚██████╗███████║███████╗██║ ╚████║ ██║╚██████╔╝ ██║ ██║
-   ╚═════╝╚══════╝╚══════╝╚═╝  ╚═══╝ ╚═╝ ╚═════╝  ╚═╝ ╚═╝
-                                                         
+  return `                                  
+     CCCCCCCCCCCCCXXXXXXX       XXXXXXXRRRRRRRRRRRRRRRRR   
+  CCC::::::::::::CX:::::X       X:::::XR::::::::::::::::R  
+CC:::::::::::::::CX:::::X       X:::::XR::::::RRRRRR:::::R 
+C:::::CCCCCCCC::::CX::::::X     X::::::XRR:::::R     R:::::R
+C:::::C       CCCCCCXXX:::::X   X:::::XXX  R::::R     R:::::R
+C:::::C                 X:::::X X:::::X     R::::R     R:::::R
+C:::::C                  X:::::X:::::X      R::::RRRRRR:::::R 
+C:::::C                   X:::::::::X       R:::::::::::::RR  
+C:::::C                   X:::::::::X       R::::RRRRRR:::::R 
+C:::::C                  X:::::X:::::X      R::::R     R:::::R
+C:::::C                 X:::::X X:::::X     R::::R     R:::::R
+C:::::C       CCCCCCXXX:::::X   X:::::XXX  R::::R     R:::::R
+C:::::CCCCCCCC::::CX::::::X     X::::::XRR:::::R     R:::::R
+CC:::::::::::::::CX:::::X       X:::::XR::::::R     R:::::R
+  CCC::::::::::::CX:::::X       X:::::XR::::::R     R:::::R
+     CCCCCCCCCCCCCXXXXXXX       XXXXXXXRRRRRRRR     RRRRRRR                                                                                                 
 
 Type 'help' to see the list of available commands.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
