@@ -123,129 +123,158 @@ export const date = async (args: string[]): Promise<string> => {
 
 // Banner
 export const banner = (args?: string[]): string => {
-  return `                                  
-     CCCCCCCCCCCCCXXXXXXX       XXXXXXXRRRRRRRRRRRRRRRRR   
-  CCC::::::::::::CX:::::X       X:::::XR::::::::::::::::R  
-CC:::::::::::::::CX:::::X       X:::::XR::::::RRRRRR:::::R 
-C:::::CCCCCCCC::::CX::::::X     X::::::XRR:::::R     R:::::R
-C:::::C       CCCCCCXXX:::::X   X:::::XXX  R::::R     R:::::R
+  return `                                                                                  
+        CCCCCCCCCCCCCXXXXXXX       XXXXXXXRRRRRRRRRRRRRRRRR   
+     CCC::::::::::::CX:::::X       X:::::XR::::::::::::::::R  
+   CC:::::::::::::::CX:::::X       X:::::XR::::::RRRRRR:::::R 
+  C:::::CCCCCCCC::::CX::::::X     X::::::XRR:::::R     R:::::R
+ C:::::C       CCCCCCXXX:::::X   X:::::XXX  R::::R     R:::::R
 C:::::C                 X:::::X X:::::X     R::::R     R:::::R
 C:::::C                  X:::::X:::::X      R::::RRRRRR:::::R 
 C:::::C                   X:::::::::X       R:::::::::::::RR  
 C:::::C                   X:::::::::X       R::::RRRRRR:::::R 
 C:::::C                  X:::::X:::::X      R::::R     R:::::R
 C:::::C                 X:::::X X:::::X     R::::R     R:::::R
-C:::::C       CCCCCCXXX:::::X   X:::::XXX  R::::R     R:::::R
-C:::::CCCCCCCC::::CX::::::X     X::::::XRR:::::R     R:::::R
-CC:::::::::::::::CX:::::X       X:::::XR::::::R     R:::::R
-  CCC::::::::::::CX:::::X       X:::::XR::::::R     R:::::R
-     CCCCCCCCCCCCCXXXXXXX       XXXXXXXRRRRRRRR     RRRRRRR                                                                                                 
-
+ C:::::C       CCCCCCXXX:::::X   X:::::XXX  R::::R     R:::::R
+  C:::::CCCCCCCC::::CX::::::X     X::::::XRR:::::R     R:::::R
+   CC:::::::::::::::CX:::::X       X:::::XR::::::R     R:::::R
+     CCC::::::::::::CX:::::X       X:::::XR::::::R     R:::::R
+        CCCCCCCCCCCCCXXXXXXX       XXXXXXXRRRRRRRR     RRRRRRR
+                                                                                                                                                                                                                                                                                                                                                                                                                                         
 Type 'help' to see the list of available commands.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
 
 // CSEN1011 manual pages
-export const man = async (args: string[]): Promise<string> => {
-  
-  if (args.length != 1) {
-    return 'Invalid arguments!\n\nUsage:\nman get_int\nman get_string\n'
-  }
+// export const man = async (args: string[]): Promise<string> => {
 
-  // which API
-  if (args[0] == 'get_int') {
-    window.open(`${config.manual_url}` + '/3/get_int');
-    return 'Opening get_int Manual Page...';
-  }
-  
-  if (args[0] == 'get_string') {
-    window.open(`${config.manual_url}` + '/3/get_string');
-    return 'Opening get_string Manual Page...';
-  }
+//   if (args.length != 1) {
+//     return 'Invalid arguments!\n\nUsage:\nman get_int\nman get_string\n'
+//   }
 
-  return 'Invalid arguments!\n\nUsage:\nman get_int\nman get_string\n'
+//   // which API
+//   if (args[0] == 'get_int') {
+//     window.open(`${config.manual_url}` + '/3/get_int');
+//     return 'Opening get_int Manual Page...';
+//   }
 
-};
+//   if (args[0] == 'get_string') {
+//     window.open(`${config.manual_url}` + '/3/get_string');
+//     return 'Opening get_string Manual Page...';
+//   }
+
+//   return 'Invalid arguments!\n\nUsage:\nman get_int\nman get_string\n'
+
+// };
 
 // CSEN1011 web pages
-export const web = async (args: string[]): Promise<string> => {
-  window.open(`${config.web_url}`);
+// export const web = async (args: string[]): Promise<string> => {
+//   window.open(`${config.web_url}`);
 
-  return 'Opening CSEN1011 Web Pages...';
-};
+//   return 'Opening CSEN1011 Web Pages...';
+// };
 
 // games karel, 2048, snake, 15
-export const game = async (args: string[]): Promise<string> => {
-  if (args.length != 1) {
-    return 'Invalid arguments!\n\nUsage:\ngame snake\ngame 2048\ngame karel\ngame 15\n'
-  }
+// export const game = async (args: string[]): Promise<string> => {
+//   if (args.length != 1) {
+//     return 'Invalid arguments!\n\nUsage:\ngame snake\ngame 2048\ngame karel\ngame 15\n'
+//   }
 
-  // karel game select
-  if (args[0] == 'karel') {
-    window.open(`${config.karel_url}`);
-    return 'Opening karel game...';
-  }
-  
-  // 2048 game select
-  if (args[0] == '2048') {
-    window.open(`${config.game_2048_url}`);
-    return 'Opening 2048 game...';
-  }
+//   // karel game select
+//   if (args[0] == 'karel') {
+//     window.open(`${config.karel_url}`);
+//     return 'Opening karel game...';
+//   }
 
-  // snake game select
-  if (args[0] == 'snake') {
-    window.open(`${config.game_snake_url}`);
-    return 'Opening snake game...';
-  }
+//   // 2048 game select
+//   if (args[0] == '2048') {
+//     window.open(`${config.game_2048_url}`);
+//     return 'Opening 2048 game...';
+//   }
 
-  // snake game select
-  if (args[0] == '15') {
-    window.open(`${config.game_15_url}`);
-    return 'Opening 15 game...';
-  }
-  return 'Invalid arguments!\n\nUsage:\ngame snake\ngame 2048\ngame karel\ngame 15\n'
-};
+//   // snake game select
+//   if (args[0] == 'snake') {
+//     window.open(`${config.game_snake_url}`);
+//     return 'Opening snake game...';
+//   }
+
+//   // snake game select
+//   if (args[0] == '15') {
+//     window.open(`${config.game_15_url}`);
+//     return 'Opening 15 game...';
+//   }
+//   return 'Invalid arguments!\n\nUsage:\ngame snake\ngame 2048\ngame karel\ngame 15\n'
+// };
 
 // seniors_project ar
 // seniors_project hangman
 
-export const seniors_project = async (args: string[]): Promise<string> => {
+// export const seniors_project = async (args: string[]): Promise<string> => {
+//   if (args.length != 1) {
+//     return 'Invalid arguments!\n\nUsage:\nseniors_project hangman\nseniors_project ar\n'
+//   }
+
+//   // ar project
+//   if (args[0] == 'ar') {
+//     window.open(`${config.ar_project_url}`);
+//     return 'Opening AR Project done by ' + `${config.ar_project_senior_name}` + ' ...';
+//   }
+
+//   // hangman project
+//   if (args[0] == 'hangman') {
+//     window.open(`${config.hangman_project_url}`);
+//     return 'Opening Hangman Project done by ' + `${config.hangman_project_senior_name}` + ' ...';
+//   }
+
+//   return 'Invalid arguments!\n\nUsage:\nseniors_project hangman\nseniors_project ar\n'
+// };
+
+// export const explore = async (args: string[]): Promise<string> => {
+//   if (args.length != 1) {
+//     return 'Invalid arguments!\n\nUsage:\nexplore for-loop-01\nexplore for-loop-02\n'
+//   }
+
+//   // for loop example 1
+//   if (args[0] == 'for-loop-01') {
+//     window.open(`${config.exlorable_for_loop_01_url}`);
+//     return 'Explore how output changes when you change the initialization statement, condition statement, increment statment in a for loop.';
+//   }
+
+//   // for loop example 2
+//   if (args[0] == 'for-loop-02') {
+//     window.open(`${config.exlorable_for_loop_02_url}`);
+//     return 'Explore what happens when you change index variable in a for loop?';
+//   }
+
+//   return 'Invalid arguments!\n\nUsage:\nexplore for-loop-01\nexplore for-loop-02\n'
+// };
+
+export const cxr = async (args: string[]): Promise<string> => {
   if (args.length != 1) {
-    return 'Invalid arguments!\n\nUsage:\nseniors_project hangman\nseniors_project ar\n'
+    return 'CXR is a center here at GITAM promoting research projects in emerging AR\\VR field.\n\nUsage:\ncxr more\ncxr team\ncxr projects\ncxr activities\ncxr team_pages'
   }
 
-  // ar project
-  if (args[0] == 'ar') {
-    window.open(`${config.ar_project_url}`);
-    return 'Opening AR Project done by ' + `${config.ar_project_senior_name}` + ' ...';
-  }
-  
-  // hangman project
-  if (args[0] == 'hangman') {
-    window.open(`${config.hangman_project_url}`);
-    return 'Opening Hangman Project done by ' + `${config.hangman_project_senior_name}` + ' ...';
-  }
-    
-  return 'Invalid arguments!\n\nUsage:\nseniors_project hangman\nseniors_project ar\n'
-};
-
-export const explore = async (args: string[]): Promise<string> => {
-  if (args.length != 1) {
-    return 'Invalid arguments!\n\nUsage:\nexplore for-loop-01\nexplore for-loop-02\n'
-  }
-
-  // for loop example 1
-  if (args[0] == 'for-loop-01') {
-    window.open(`${config.exlorable_for_loop_01_url}`);
-    return 'Explore how output changes when you change the initialization statement, condition statement, increment statment in a for loop.';
-  }
-  
-  // for loop example 2
-  if (args[0] == 'for-loop-02') {
-    window.open(`${config.exlorable_for_loop_02_url}`);
-    return 'Explore what happens when you change index variable in a for loop?';
-  }
-    
-  return 'Invalid arguments!\n\nUsage:\nexplore for-loop-01\nexplore for-loop-02\n'
-};
+  if (args[0] == 'more')
+  {
+    return 'In progress\nMore info about CXR\n'
+  } 
+  if (args[0] == 'team')
+  {
+    return 'Team Members\nKailash\nRatna Varshit\nLikith\nSwaraj\n...'
+  } 
+  if (args[0] == 'projects')
+  {
+    return 'In progress\n'
+  } 
+  if (args[0] == 'activities')
+  {
+    return 'In progress\nWorkshop pics\nteam pics\n'
+  } 
+  if (args[0] == 'team_pages')
+  {
+    window.open(`https://pragnya.club/vswaraj/`);
+    window.open(`https://pragnya.club/skailash/`);
+    return 'In progress\n'
+  } 
+}

@@ -6,21 +6,10 @@
     "github": "csen1011",
     "linkedin": "cxr_gitam"
   },
-  "ar_project_url":"https://youtu.be/fLpEQ780v-s",
-  "ar_project_senior_name":"Kailash Sriram, Venkata Swaraj, Likith",
-  "hangman_project_url":"https://youtu.be/-SVvl5bhDaE",
-  "hangman_project_senior_name":"Kailash Sriram, Venkata Swaraj",
-  "web_url": "http://csen1011.com/web",
-  "manual_url": "https://manual.csen1011.com",
-  "karel_url":"https://stanford.edu/~cpiech/karel/learn.html",
-  "game_2048_url":"https://csen1011.com/2048-game",
-  "game_snake_url":"https://g.co/kgs/fjDR34",
-  "game_15_url":"https://15puzzle.netlify.app",
   "email": "contact@email.com",
   "ps1_hostname": "gitam",
   "ps1_username": "cxr",
   "repo": "https://github.com/csen1011/shell",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
   "colors": {
     "light": {
       "background": "#FBF1C9",
@@ -40,7 +29,5 @@
       "blue": "#EBCB8B",
       "red": "#BF616A"
     }
-  },
-  "exlorable_for_loop_01_url": "https://gitam-2021.github.io/code-examples/explorable/loops/for/",
-  "exlorable_for_loop_02_url": "https://gitam-2021.github.io/code-examples/explorable/loops/index-variable/"
+  }
 }
