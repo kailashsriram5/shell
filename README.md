@@ -1,6 +1,6 @@
-# shell.csen1011.com
+# cxr.vercell.com
 
-Shell interaface to find all the needed help.
+Shell interaface to find all about CXR.
 
 
 ## Credit
