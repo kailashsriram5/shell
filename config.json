@@ -1,10 +1,10 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/csen1011/.github/main/profile/README.md",
-  "title": "CSEN1011: Problem Solving and Programming in C",
-  "name": "CSEN1011 @ GITAM School of Technology",
+  "title": "CXR - Center for eXtended Reality",
+  "name": "Projects on AR\\VR",
   "social": {
     "github": "csen1011",
-    "linkedin": "gitamdeemeduniversity"
+    "linkedin": "cxr_gitam"
   },
   "ar_project_url":"https://youtu.be/fLpEQ780v-s",
   "ar_project_senior_name":"Kailash Sriram, Venkata Swaraj, Likith",
@@ -17,8 +17,8 @@
   "game_snake_url":"https://g.co/kgs/fjDR34",
   "game_15_url":"https://15puzzle.netlify.app",
   "email": "contact@email.com",
-  "ps1_hostname": "csen1011.com",
-  "ps1_username": "vidyardhi",
+  "ps1_hostname": "gitam",
+  "ps1_username": "cxr",
   "repo": "https://github.com/csen1011/shell",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
   "colors": {
