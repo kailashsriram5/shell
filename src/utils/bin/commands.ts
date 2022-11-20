@@ -265,10 +265,12 @@ export const cxr = async (args: string[]): Promise<string> => {
   } 
   if (args[0] == 'projects')
   {
+    window.open(`https://cxrgitam.github.io/Aboutcxr/`);
     return 'In progress\n'
   } 
   if (args[0] == 'activities')
   {
+    window.open(`https://cxrgitam.github.io/Aboutcxr/workshop/`);
     return 'In progress\nWorkshop pics\nteam pics\n'
   } 
   if (args[0] == 'team_pages')
